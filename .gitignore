@@ -1,0 +1,51 @@
+# --- Browser profile (contains cookies / session data) ----------------------
+browser_data/
+backend_data/
+*.userdata/
+
+# --- Python ---------------------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Secrets --------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# --- Logs / runtime artefacts ---------------------------------------------
+logs/
+*.log
+screenshots/
+tmp/
+
+# --- Editors / OS ---------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Accidental empty artefacts from a mangled shell redirect ----------------
+# (pre-existing in the project folder - kept on disk, not committed)
+/App
+/Microsoft
+/py
+/python
+
+# --- Windows ---------------------------------------------------------------
+*.lnk
+$RECYCLE.BIN/
